@@ -1,0 +1,273 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  max-width: 1040px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  color: #000000;
+  background-color: azure;
+}
+
+.form {
+  margin: 10px 20px 0;
+  padding: 10px 15px;
+  width: 1000px;
+  background-color: #fff;
+  box-shadow: 6px 7px 10px 1px rgba(109, 217, 117, 0.2);
+  border-radius: 8px;
+  border: 1px solid rgba(109, 217, 117, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+.form-input {
+  padding: 5px 10px;
+  max-width: 150px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid rgba(109, 217, 117, 0.2);
+  outline: none;
+}
+
+.form-categories {
+  padding: 5px 10px;
+  font-weight: 500;
+  border: 1px solid rgba(109, 217, 117, 0.2);
+  text-transform: capitalize;
+}
+
+.result-wrapper {
+  padding: 85px 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.result-desc {
+  margin: 0;
+  padding: 20px 25px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid rgba(109, 217, 117, 0.2);
+  box-shadow: 6px 7px 10px 1px rgba(109, 217, 117, 0.2);
+}
+
+.total-datas {
+  margin: 0 10px;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  color: mediumturquoise;
+}
+
+/* MAIN section */
+.main {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.main-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 70%;
+}
+
+.main-item {
+  margin: 16px 0;
+  padding: 6px 10px 6px 20px;
+  min-height: 110px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 6px 7px 10px 1px #6dd97533;
+}
+
+.main-item:hover {
+  border-left: 6px solid mediumturquoise;
+  cursor: pointer;
+}
+
+.main-item-wrapper {
+  width: 100px;
+}
+
+.main-item-img {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.main-item-left {
+  padding-left: 10px;
+  width: 100%;
+}
+
+.main-item-title-wrapper {
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+}
+
+.main-item-title {
+  margin: 0;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.main-item-brand {
+  margin-left: 12px;
+  padding: 3px 9px;
+  font-weight: 600;
+  color: white;
+  background-color: mediumturquoise;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+.main-item-category {
+  margin-left: 12px;
+  padding: 3px 9px;
+  font-weight: 600;
+  color: white;
+  background-color: #000;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+
+.main-item-add{
+  margin-left: 6px;
+  padding: 5.5px 16px;
+  font-weight: 600;
+  color: white;
+  background-color: mediumturquoise;
+  border-radius: 6px;
+  text-transform: capitalize;
+  border: none;
+}
+
+.main-item-add:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.main-item-feature-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.main-item-feature-name {
+  margin: 3px 12px 6px 0;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.main-item-feature-value {
+  padding: 0 0 0 2px;
+  font-size: 16px;
+  font-weight: 600;
+  color: mediumturquoise;
+}
+
+.main-item-desc {
+  margin: 0;
+  max-height: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  overflow-y: auto;
+}
+
+.pagination {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  margin: 1px;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: none;
+}
+
+.pagination button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pagination button:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.bookmark {
+  margin: 16px 0 16px 20px;
+  padding: 16px 12px;
+  width: 30%;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 6px 7px 10px 1px #6dd97533;
+}
+
+.bookmark-item {
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(109, 217, 117, 0.2);
+  box-shadow: 6px 7px 10px 1px rgba(109, 217, 117, 0.2);
+}
+
+.bookmanrk-item-left {
+  margin-right: 4px;
+  width: 100%;
+}
+
+.bookmark-name {
+  margin: 0 0 3px;
+  font-weight: 600;
+}
+
+.bookmark-info-wrapper {
+  display: flex;
+}
+
+.bookmark-price {
+  margin: 0 10px 0 0;
+  font-size: 12px;
+}
+
+.bookmark-price-value {
+  color: mediumturquoise;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.bookmark-delete {
+  height: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  background-color: red;
+  color: #fff;
+}
+
+.bookmark-delete:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}

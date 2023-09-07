@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>dummy</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="form">
+        <input class="form-input search" type="text" placeholder="Search..." />
+        <input class="form-input price" type="number" placeholder="Price..." />
+        <input class="form-input stock" type="number" placeholder="Stock..." />
+        <input
+          class="form-input dis-per"
+          type="number"
+          placeholder="Dis/per..."
+        />
+        <input
+          class="form-input rating"
+          type="number"
+          placeholder="Rating..."
+        />
+
+        <select class="form-categories">
+          <option selected value="all" class="form-category">All</option>
+        </select>
+      </form>
+
+      <div class="result-wrapper">
+        <p class="result-desc">
+          <span class="total-datas start">0</span>
+          <span class="total-datas">-</span>
+          <span class="total-datas end">0</span>
+        </p>
+      </div>
+
+      <div class="main">
+        <ul class="main-list">
+          <!-- Item datas -->
+        </ul>
+
+        <ul class="bookmark">
+        </ul>
+      </div>
+
+      <div class="pagination"></div>
+    </div>
+
+    <!-- Selection -->
+    <template class="data-categories">
+      <option class="form-category" value="saab">Saab</option>
+    </template>
+
+    <!-- Products -->
+    <template class="data-item">
+      <li class="main-item">
+        <div class="main-item-wrapper">
+          <img class="main-item-img" src="" alt="" width="100" />
+        </div>
+        <div class="main-item-left">
+          <div class="main-item-title-wrapper">
+            <div style="display: flex;">
+              <h3 class="main-item-title">ddd</h3>
+              <span class="main-item-brand">apple</span>
+              <span class="main-item-category">phones</span>
+            </div>
+
+            <button class="main-item-add">Add</button>
+          </div>
+
+          <div class="main-item-features">
+            <div class="main-item-feature-wrapper">
+              <p class="main-item-feature-name">
+                Price:
+                <span class="main-item-feature-value price">0</span> $
+              </p>
+              <p class="main-item-feature-name">
+                Stock:
+                <span class="main-item-feature-value stock">0</span> %
+              </p>
+              <p class="main-item-feature-name">
+                Dis.Per:
+                <span class="main-item-feature-value dis-per">0</span>
+              </p>
+              <p class="main-item-feature-name">
+                Rating:
+                <span class="main-item-feature-value rating" style="color: red"
+                  >0</span
+                >
+              </p>
+            </div>
+
+            <p class="main-item-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              cumque consectetur adipisci iste placeat animi magni veritatis,
+              impedit incidunt similique? Pariatur odit aperiam laudantium optio
+              officiis labore earum ad dolorem aliquid excepturi sit, sint,
+              obcaecati corporis velit corrupti dolore itaque. Vero asperiores
+              tempora delectus sapiente laboriosam. Architecto dicta nemo
+              sapiente?
+            </p>
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <!-- Bookmanrks -->
+    <template class="bookmarks-template">
+      <li class="bookmark-item">
+        <div class="bookmanrk-item-left">
+          <p class="bookmark-name">dddd</p>
+
+          <div class="bookmark-info-wrapper">
+            <p class="bookmark-price">
+              Price:
+              <span class="bookmark-price-value price">50</span> $
+            </p>
+            <p class="bookmark-price">
+              Rating:
+              <span class="bookmark-price-value rating" style="color: red">4.51</span>
+            </p>
+          </div>
+        </div>
+        <button class="bookmark-delete">Delete</button>
+      </li>
+    </template>
+
+    <!-- Pages -->
+    <template class="data-pages">
+      <button class="page">1</button>
+    </template>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
